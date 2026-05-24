@@ -191,7 +191,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
             text=f"📦 New Order\nID: {order_id}"
         )
 
-        await update.message.reply_text("✅ Sent for verification.")
+        await update.message.reply_text("✅ Sent key - Verifacation & results will be sent here.")
         redeeming_users.remove(user.id)
         return
 
@@ -227,7 +227,7 @@ async def staff_send(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     await context.bot.send_message(
         chat_id=orders[order_id],
-        text=f"✅ Delivered:\n{msg}"
+        text=f"💬 Notification:\n{msg}"
     )
 
     await update.message.reply_text("Sent.")
