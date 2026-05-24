@@ -66,37 +66,39 @@ We currently accept Litecoin (LTC) only.
 PRODUCTS_TEXT = """
 📦 Products
 
-- IntelX Lookups - 
+🔎 - IntelX Lookups - 
 IX lookup - Uses System ID to download an Intelx breach / log. [[FREE]]
 
-- Basic Persons Search -
+🕵 ️- Basic Persons Search -
 A basic person search. Will gather basic details about a person, like age and location.
 
-- Comprehensive Person Search -
+🕵-️- Comprehensive Person Search -
 Extensive PII report, including family, address history and marriage certificates.
 
-- Full Report -
+🕵-️- Full Report -
 Full background check - Includes TLOxp, DL, comprehensive person search and criminal records.
 
-- Social Catfish Lookup -
+🔎 - Social Catfish Lookup -
 A free lookup from socialcatfish.com. [[FREE]]
 
-- Osint.Industries - 
+🔎 - Osint.Industries - 
 Multi platform OSINT checker and verifier - checks websites such as Facebook, Snapchat, Apple, Google, etc...
 
-- TLOxp -
+🔎 - TLOxp -
 Performs a TLO - Gathers accurate personal information, and family information. Develops connections with targets.
 
-- Website Logs - 
+📖 - Website Logs - 
 Get up to 10k logs for any website of your choice! Includes username/email:password:site - Fresh logins.
 
-- LeakOsint API - 
+💻 - LeakOsint API - 
 $10 credit LeakOSINT APIs - Fully upgraded API and has high request limit. Not shared.
 
-- Discord Server Boost (8/14) - Buy server boosts for your Discord account so you can grow your server and unlock the rewards! (1 Month Boost)
+🔮 - Discord Server Boost (8/14) - Buy server boosts for your Discord account so you can grow your server and unlock the rewards! (1 Month Boost)
 
-- Handbook -
+📕 - Handbook -
 A detailed handbook on using OSINT. Includes suggestions for free OSINT tools and ways of using them. [[FREE]]
+
+Lots more coming very soon!
 """
 
 # =========================
