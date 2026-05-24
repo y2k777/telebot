@@ -93,13 +93,13 @@ Uses multiple different data breach aggregators such as Snusbase and Fetchbase t
 🔎 - LeakOsint Search - 
 Uses the LeakOsint API to lookup information, including PII, breached info and NPD.
 
-🔎 - Drivers Lic Search -
-Provides you with the drivers lic of the target.
+🔎 - DL Search -
+Provides you with the DL of the target.
 
 🔎 - AI Search -
 Uses AI to gather and compile large amounts of information about targets. May not be 100% accurate.
 
-🔎 - TLOxp -
+🔎 - TLO -
 Performs a TLO - Gathers accurate personal information, and family information. Develops connections with targets.
 
 📖 - Website Logs - 
