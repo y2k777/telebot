@@ -25,7 +25,6 @@ REFERRAL_LINK = "https://v2store.sell.app/affiliate"
 # =========================
 
 redeeming_users = set()
-contacting_users = set()
 checking_status_users = set()
 
 orders = {}
@@ -40,7 +39,6 @@ def main_menu():
         [InlineKeyboardButton("🛒 Buy", url=BUY_LINK)],
         [InlineKeyboardButton("🎟 Redeem", callback_data="redeem")],
         [InlineKeyboardButton("📦 Order Status", callback_data="status")],
-        [InlineKeyboardButton("📨 Contact Staff", callback_data="contact")],
         [InlineKeyboardButton("📦 Products", callback_data="products")],
         [InlineKeyboardButton("ℹ️ Information", callback_data="info")],
         [InlineKeyboardButton("🎁 Referral", url=REFERRAL_LINK)],
@@ -84,10 +82,6 @@ async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await query.message.reply_text("📦 Send order ID:", reply_markup=back_button())
         return
 
-    if query.data == "contact":
-        contacting_users.add(query.from_user.id)
-        await query.message.reply_text("📨 Send message:", reply_markup=back_button())
-        return
 
     if query.data == "products":
         await query.message.reply_text(
@@ -121,15 +115,6 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         checking_status_users.remove(user.id)
         return
 
-    # CONTACT STAFF
-    if user.id in contacting_users:
-        await context.bot.send_message(
-            chat_id=STAFF_CHAT_ID,
-            text=f"📨 Support\nUser: {user.first_name}\nMessage: {text}"
-        )
-        await update.message.reply_text("Sent to staff.")
-        contacting_users.remove(user.id)
-        return
 
     # REDEEM
     if user.id in redeeming_users:
