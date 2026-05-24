@@ -1,4 +1,3 @@
-import os
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import (
     ApplicationBuilder,
@@ -84,6 +83,21 @@ A free lookup from socialcatfish.com. [[FREE]]
 🔎 - Osint.Industries - 
 Multi platform OSINT checker and verifier - checks websites such as Facebook, Snapchat, Apple, Google, etc...
 
+🔎 - Discord Lookup -
+Uses breached Discord DB's and RestoreCord DB's.
+
+🔎 - Breach Search -
+Uses multiple different data breach aggregators such as Snusbase and Fetchbase to show leaked information on a website / company / individual.
+
+🔎 - LeakOsint Search - 
+Uses the LeakOsint API to lookup information, including PII, breached info and NPD.
+
+🔎 - Drivers Lic Search -
+Provides you with the drivers lic of the target.
+
+🔎 - AI Search -
+Uses AI to gather and compile large amounts of information about targets. May not be 100% accurate.
+
 🔎 - TLOxp -
 Performs a TLO - Gathers accurate personal information, and family information. Develops connections with targets.
 
@@ -92,8 +106,6 @@ Get up to 10k logs for any website of your choice! Includes username/email:passw
 
 💻 - LeakOsint API - 
 $10 credit LeakOSINT APIs - Fully upgraded API and has high request limit. Not shared.
-
-🔮 - Discord Server Boost (8/14) - Buy server boosts for your Discord account so you can grow your server and unlock the rewards! (1 Month Boost)
 
 📕 - Handbook -
 A detailed handbook on using OSINT. Includes suggestions for free OSINT tools and ways of using them. [[FREE]]
@@ -191,7 +203,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
             text=f"📦 New Order\nID: {order_id}"
         )
 
-        await update.message.reply_text("✅ Sent key - Verifacation & results will be sent here.")
+        await update.message.reply_text("✅ Sent ID - Verification & results will be sent here.")
         redeeming_users.remove(user.id)
         return
 
